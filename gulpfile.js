@@ -171,7 +171,8 @@ gulp.task('server', ['default', 'watch'], function(callback) {
     serve(req, res, done);
   })
 
-  var serverPort = Math.floor((Math.random() * 1000) + 3000);
+//  var serverPort = Math.floor((Math.random() * 1000) + 3000);
+  var serverPort = 3001;
   if (argv.port) {
     serverPort = parseInt(argv.port);
   }
