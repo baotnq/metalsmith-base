@@ -9,10 +9,10 @@
         <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="{{ref-domain}}images/favicon.png">
+        <link rel="apple-touch-icon" href="{{ref-domain}}images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ref-domain}}images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ref-domain}}images/apple-touch-icon-114x114.png">
         <!-- animation -->
         <link rel="stylesheet" href="{{ref-domain}}css/animate.css" />
         <!-- bootstrap -->
@@ -20,6 +20,7 @@
         <!-- et line icon -->
         <link rel="stylesheet" href="{{ref-domain}}css/et-line-icons.css" />
         <!-- font-awesome icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ref-domain}}css/font-awesome.min.css" />
         <!-- revolution slider -->
         <link rel="stylesheet" href="{{ref-domain}}css/extralayers.css" />
@@ -188,7 +189,7 @@
                                                 <li><a href="intro-travel2.html">Travel Intro - V2</a></li>
                                                 <li><a href="intro-agency.html">Agency Intro</a></li>
                                                 <li><a href="intro-agency2.html">Agency Intro - V2</a></li>
-                                                <li><a href="intro-product.html">Product Intro</a></li>
+                                                <li><a href="intro-products.0.html">Product Intro</a></li>
                                             </ul>
                                             <!-- end sub menu item  -->
                                         </li>
@@ -590,7 +591,7 @@
                                         <li><a href="home-shop.html">Shop homepage</a></li>
                                         <li><a href="shop-with-sidebar.html">Shop with sidebar - grid</a></li><li><a href="shop-with-sidebar-list.html">Shop with sidebar - list</a></li>
                                         <li><a href="shop-full-width.html">Shop full width</a></li>
-                                        <li><a href="shop-single-product.html">Single product</a></li>
+                                        <li><a href="shop-single-products.0.html">Single product</a></li>
                                         <li><a href="shop-cart.html">Cart</a></li>
                                         <li><a href="shop-checkout.html">Checkout</a></li>
                                     </ul>
@@ -662,9 +663,9 @@
                             <!-- shop item -->
                             <div class="col-md-4 col-sm-6">
                                 <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product9.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Gianvito Rossi</a></span>
-                                    <span class="price black-text"><del>$750.00</del>$450</span>
+                                    <a href="shop-single-product.html"><img src="{{ref-domain}}{{products.0.image}}" alt=""/></a>
+                                    <span class="product-name text-uppercase"><a href="shop-single-products.0.html">Gianvito Rossi</a></span>
+                                    <span class="price black-text"><del>${{products.0.old_price}}</del>${{products.0.price}}</span>
                                     <span class="onsale onsale-style-2">Sale</span>
                                     <div class="quick-buy">
                                         <div class="product-share">
@@ -676,183 +677,7 @@
                                 </div>
                             </div>
                             <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product16.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Givenchy Low</a></span>
-                                    <span class="price black-text">$500</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product11.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Alexander McQueen</a></span>
-                                    <span class="price black-text">$380</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product12.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Richard Nicoll</a></span>
-                                    <span class="price black-text">$680</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product13.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Roland Mouret</a></span>
-                                    <span class="price black-text">$980</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product14.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Preen Line</a></span>
-                                    <span class="price black-text"><del>$750.00</del>$450</span>
-                                    <span class="onsale onsale-style-2">Sale</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product15.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Balmain</a></span>
-                                    <span class="price black-text">$350</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product17.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Valentino</a></span>
-                                    <span class="price black-text">$370</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product20.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Asymmetric</a></span>
-                                    <span class="price black-text">$370</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product19.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Bead-embellished</a></span>
-                                    <span class="price black-text">$370</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product21.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Victoria Beckham</a></span>
-                                    <span class="price black-text">$370</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
-                            <!-- shop item -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{ref-domain}}images/product22.jpg" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Leather shopper</a></span>
-                                    <span class="price black-text">$370</span>
-                                    <div class="quick-buy">
-                                        <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end shop item -->
+
                         </div>
                         <!-- pagination -->
                         <div class="pagination margin-ten no-margin-bottom">
