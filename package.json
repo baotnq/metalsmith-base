@@ -47,7 +47,8 @@
     "webpack": "^1.12.1"
   },
   "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.tar.gz",
     "jquery": "^2.1.4",
-    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.tar.gz"
+    "metalsmith-matters": "^1.2.0"
   }
 }

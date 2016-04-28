@@ -27,6 +27,12 @@ module.exports = {
         "gfm": true,
         "tables": true
       },
+      'metalsmith-matters':     {
+           'delims':  ['---json', '---'],
+           'options': {
+               'lang': 'json'
+           }
+       },
       "metalsmith-excerpts": {},
       "metalsmith-permalinks": {
         "pattern": ":collection/:title"
