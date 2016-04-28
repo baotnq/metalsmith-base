@@ -21,7 +21,7 @@
        "image" : "images/product16.jpg",
        "url" : "/",
        "price" : "500",
-       "old_price" : "500"
+       "old_price" : ""
     }
   ]
 }
