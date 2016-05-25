@@ -9,7 +9,8 @@ module.exports = {
     "metadata": {
       "site": {
         "url": "https://github.com/evocode/metalsmith-base",
-        "ref-domain" : "http://www.themezaa.com/html/h-code/"
+        "ref-domain" : "/"
+        // "ref-domain" : "http://www.themezaa.com/html/h-code/"
       }
     },
     "config": {

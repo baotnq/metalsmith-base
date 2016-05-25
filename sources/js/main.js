@@ -7,13 +7,13 @@ var hashfilter;
 
 $(document).ready(function () {
 
-    // var $buythemediv = '<div class="buy-theme xs-display-none"><a href="http://themeforest.net/item/hcode-multipurpose-onepage-multi-page-template/11717596?ref=themezaa" target="_blank"><span>Purchase Theme</span></a></div><div class="quick-question xs-display-none"><a href="mailto:info@themezaa.com?subject=H-Code Quick Question"><span>Quick Question?</span></a></div>';
-    // $('body').append($buythemediv);
+    var $buythemediv = '<div class="buy-theme xs-display-none"><a href="http://themeforest.net/item/hcode-multipurpose-onepage-multi-page-template/11717596?ref=themezaa" target="_blank"><span>Purchase Theme</span></a></div><div class="quick-question xs-display-none"><a href="mailto:info@themezaa.com?subject=H-Code Quick Question"><span>Quick Question?</span></a></div>';
+    $('body').append($buythemediv);
 
 
     // Show Animated Counters
     animatecounters();
-
+    
     /* ===================================
     counter number reset while scrolling
     ====================================== */
@@ -26,7 +26,7 @@ $(document).ready(function () {
             $(this).addClass('appear');
         }
     });
-
+        
     /*==============================================================*/
     //Smooth Scroll - START CODE
     /*==============================================================*/
@@ -157,10 +157,10 @@ $(document).ready(function () {
                     setTimeout(autoscrolltoelement, 500);
                     hashfilter=temphashfilter;
                  }
-             });
+             });        
     }
-
-
+    
+    
 
     $portfolio.imagesLoaded(function () {
         $portfolio.isotope({
@@ -186,10 +186,10 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
         var selector = $(this).attr('data-filter');
         $portfolio.isotope({filter: selector});
-
+       
         if (selector.substr(1)!="" && selector.substr(1)!="#")
         {
-             location.hash = selector.substr(1);
+             location.hash = selector.substr(1);     
         }
         else
         {
@@ -1507,7 +1507,7 @@ $(document).ready(function () {
 });
 
     function animatecounters() {
-
+    
     /*==============================================================*/
     //Counter Number - START CODE
     /*==============================================================*/
@@ -1521,7 +1521,7 @@ $(document).ready(function () {
     /*==============================================================*/
     //Counter Number - END CODE
     /*==============================================================*/
-
+    
     }
 
 var inViewchart = false;
@@ -1592,7 +1592,7 @@ $(window).scroll(function () {
         }
     }
 
-
+  
 
 
 
@@ -1612,7 +1612,7 @@ function SetResizeHeaderMenu() {
 /*==============================================================*/
 //Parallax - START CODE
 /*==============================================================*/
-// Parallax Fix Image Scripts
+// Parallax Fix Image Scripts 
 
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
@@ -1725,7 +1725,7 @@ function scrollToDownSection() {
 function SetResizeContent() {
     var minheight = $(window).height();
     $(".full-screen").css('min-height', minheight);
-
+    
     var minwidth = $(window).width();
     $(".full-screen-width").css('min-width', minwidth);
 }
