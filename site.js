@@ -8,7 +8,8 @@ module.exports = {
   "metalsmith": {
     "metadata": {
       "site": {
-        "url": "https://github.com/evocode/metalsmith-base"
+        "url": "https://github.com/evocode/metalsmith-base",
+        "ref-domain" : "http://www.themezaa.com/html/h-code/"
       }
     },
     "config": {

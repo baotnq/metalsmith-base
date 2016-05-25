@@ -9,41 +9,41 @@
         <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="{{ref-domain}}images/favicon.png">
-        <link rel="apple-touch-icon" href="{{ref-domain}}images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ref-domain}}images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ref-domain}}images/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="{{site.ref-domain}}images/favicon.png">
+        <link rel="apple-touch-icon" href="{{site.ref-domain}}images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{site.ref-domain}}images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{site.ref-domain}}images/apple-touch-icon-114x114.png">
         <!-- animation -->
-        <link rel="stylesheet" href="{{ref-domain}}css/animate.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/animate.css" />
         <!-- bootstrap -->
-        <link rel="stylesheet" href="{{ref-domain}}css/bootstrap.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/bootstrap.css" />
         <!-- et line icon -->
-        <link rel="stylesheet" href="{{ref-domain}}css/et-line-icons.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/et-line-icons.css" />
         <!-- font-awesome icon -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ref-domain}}css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css" />
         <!-- revolution slider -->
-        <link rel="stylesheet" href="{{ref-domain}}css/extralayers.css" />
-        <link rel="stylesheet" href="{{ref-domain}}css/settings.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/extralayers.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/settings.css" />
         <!-- magnific popup -->
-        <link rel="stylesheet" href="{{ref-domain}}css/magnific-popup.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/magnific-popup.css" />
         <!-- owl carousel -->
-        <link rel="stylesheet" href="{{ref-domain}}css/owl.carousel.css" />
-        <link rel="stylesheet" href="{{ref-domain}}css/owl.transitions.css" />
-        <link rel="stylesheet" href="{{ref-domain}}css/full-slider.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/owl.carousel.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/owl.transitions.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/full-slider.css" />
         <!-- text animation -->
-        <link rel="stylesheet" href="{{ref-domain}}css/text-effect.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/text-effect.css" />
         <!-- hamburger menu  -->
-        <link rel="stylesheet" href="{{ref-domain}}css/menu-hamburger.css" />
+        <!-- <link rel="stylesheet" href="{{site.ref-domain}}css/menu-hamburger.css" /> -->
         <!-- common -->
-        <link rel="stylesheet" href="{{ref-domain}}css/style.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/style.css" />
         <!-- responsive -->
-        <link rel="stylesheet" href="{{ref-domain}}css/responsive.css" />
+        <link rel="stylesheet" href="{{site.ref-domain}}css/responsive.css" />
         <!--[if IE]>
-            <link rel="stylesheet" href="{{ref-domain}}css/style-ie.css" />
+            <link rel="stylesheet" href="{{site.ref-domain}}css/style-ie.css" />
         <![endif]-->
         <!--[if IE]>
-            <script src="{{ref-domain}}js/html5shiv.js"></script>
+            <script src="{{site.ref-domain}}js/html5shiv.js"></script>
         <![endif]-->
     </head>
     <body>
@@ -52,7 +52,14 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="{{ref-domain}}images/logo-light.png" class="logo" /></a><a class="logo-dark" href="index.html"><img alt="" src="{{ref-domain}}images/logo-light.png" class="logo" /></a></div>
+                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html">
+                      <!-- <img alt="" src="{{site.ref-domain}}images/logo-light.png" class="logo" /> -->
+                      {{logo.name}}
+                    </a>
+                      <a class="logo-dark" href="index.html">
+                        {{logo.name}}
+                        <!-- <img alt="" src="{{site.ref-domain}}images/logo-light.png" class="logo" /> -->
+                      </a></div>
                     <!-- end logo -->
                     <!-- search and cart  -->
                     <div class="col-md-2 no-padding-left search-cart-header pull-right">
@@ -71,10 +78,10 @@
                         <!-- end search input -->
                         <div class="top-cart">
                             <!-- nav shopping bag -->
-                            <a href="#" class="shopping-cart">
+                            <!-- <a href="#" class="shopping-cart">
                                 <i class="fa fa-shopping-cart"></i>
                                 <div class="subtitle">(1) Items</div>
-                            </a>
+                            </a> -->
                             <!-- end nav shopping bag -->
                             <!-- shopping bag content -->
                             <div class="cart-content">
@@ -82,7 +89,7 @@
                                     <li>
                                         <a title="Remove item" class="remove" href="#">×</a>
                                         <a href="#">
-                                            <img width="90" height="90" alt="" src="{{ref-domain}}images/shop-cart.jpg">Leather Craft
+                                            <img width="90" height="90" alt="" src="{{site.ref-domain}}images/shop-cart.jpg">Leather Craft
                                         </a>
                                         <span class="quantity">1 × <span class="amount">$160</span></span>
                                         <a href="#">Edit</a>
@@ -103,506 +110,9 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
                     <!-- toggle navigation end -->
-                    <!-- main menu -->
-                    <div class="col-md-8 no-padding-right accordion-menu text-right">
-                        <div class="navbar-collapse collapse">
-                            <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse1" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full">
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Pre Made Homepage</li>
-                                                <li><a href="index.html">Home main</a></li>
-                                                <li><a href="home-fashion.html">Home fashion</a></li>
-                                                <li><a href="home-architecture.html">Home architecture</a></li>
-                                                <li><a href="home-spa.html">Home spa</a></li>
-                                                <li><a href="home-agency.html">Home agency</a></li>
-                                                <li><a href="home-restaurant.html">Home restaurant</a></li>
-                                                <li><a href="home-travel-agency.html">Home travel agency</a></li>
-                                                <li><a href="home-corporate.html">Home corporate</a></li>
-                                                <li><a href="home-photography.html">Home photography</a></li>
-
-                                                <li><a href="home-shop.html">Home shop</a></li>
-                                                <li><a href="home-blog.html">Home blog</a></li>
-                                                <li><a href="home-blog-grid.html">Home blog grid</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- sub menu column end -->
-                                        <!-- sub menu column -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Other</li>
-                                                <li><a href="home-masonry-portfolio.html">Home - masonry portfolio</a></li>
-                                                <li><a href="home-background-slider.html">Home - background slider</a></li>
-                                                <li><a href="home-full-screen-video.html">Home - full screen video</a></li>
-                                                <li><a href="home-half-screen-video.html">Home - half screen video</a></li>
-                                                <li><a href="home-text-rotator.html">Home - text rotator</a></li>
-                                                <li><a href="home-countdown-timer.html">Home - coming soon</a></li>
-                                                <li><a href="home-countdown-timer-animation.html">Home - coming soon (Animation) <span class="menu-new">new</span></a></li>
-                                                <li><a href="home-countdown-timer-video.html">Home - coming soon (video)</a></li>
-                                                <li><a href="home-full-width-image.html">Home - full width image</a></li>
-                                                <li><a href="home-gradient-with-image.html">Home - gradient with image</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Parallax Image / Typography</li>
-                                                <li><a href="home-parallax1.html">Parallax Image - option 1 </a></li>
-                                                <li><a href="home-parallax2.html">Parallax Image - option 2</a></li>
-                                                <li><a href="home-parallax3.html">Parallax Image - option 3 </a></li>
-                                                <li><a href="home-parallax4.html">Parallax Image - option 4</a></li>
-                                                <li><a href="home-parallax5.html">Parallax Image - option 5</a></li>
-                                                <li><a href="home-parallax.html">Full parallax home page</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Carousel slider</li>
-                                                <li><a href="home-slider-bootstrap.html">Bootstrap slider - full screen</a></li>
-                                                <li><a href="home-slider-revolution1.html">Revolution slider - full screen</a></li>
-                                                <li><a href="home-slider-revolution2.html">Revolution slider - half screen</a></li>
-                                                <li><a href="home-slider-owl1.html">owl slider - full screen</a></li>
-                                                <li><a href="home-slider-owl2.html">owl slider - half screen</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Creative Intro Pages</li>
-                                                <li><a href="intro-fashion.html">Fashion Intro</a></li>
-                                                <li><a href="intro-restaurant.html">Restaurant Intro</a></li>
-                                                <li><a href="intro-travel.html">Travel Intro</a></li>
-                                                <li><a href="intro-travel2.html">Travel Intro - V2</a></li>
-                                                <li><a href="intro-agency.html">Agency Intro</a></li>
-                                                <li><a href="intro-agency2.html">Agency Intro - V2</a></li>
-                                                <li><a href="intro-product.html">Product Intro</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse2" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">One Page <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse2" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full">
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Pre Made Homepage</li>
-                                                <li><a href="onepage-bootstrap-slider.html">Home main</a></li>
-                                                <li><a href="onepage-fashion.html">Home fashion</a></li>
-                                                <li><a href="onepage-architecture.html">Home architecture</a></li>
-                                                <li><a href="onepage-spa.html">Home spa</a></li>
-                                                <li><a href="onepage-agency.html">Home agency</a></li>
-                                                <li><a href="onepage-agency-option2.html">Home agency - option 2 <span class="menu-new">new</span></a></li>
-                                                <li><a href="onepage-restaurant.html">Home restaurant</a></li>
-                                                <li><a href="onepage-travel-agency.html">Home travel agency</a></li>
-                                                <li><a href="onepage-corporate.html">Home corporate</a></li>
-                                                <li><a href="onepage-personal.html">Home personal</a></li>
-                                                <li><a href="onepage-wedding.html">Home wedding</a></li>
-                                                <li><a href="onepage-landing.html">Landing page</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Parallax Image / Typography</li>
-                                                <li><a href="onepage-parallax1.html">Parallax Image - option 1 </a></li>
-                                                <li><a href="onepage-parallax2.html">Parallax Image - option 2</a></li>
-                                                <li><a href="onepage-parallax3.html">Parallax Image - option 3 </a></li>
-                                                <li><a href="onepage-parallax4.html">Parallax Image - option 4</a></li>
-                                                <li><a href="onepage-parallax5.html">Parallax Image - option 5</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Other</li>
-                                                <li><a href="onepage-masonry-portfolio.html">Home - masonry portfolio</a></li>
-                                                <li><a href="onepage-background-slider.html">Home - background slider</a></li>
-                                                <li><a href="onepage-full-screen-video.html">Home - full screen video</a></li>
-                                                <li><a href="onepage-text-rotator.html">Home - text rotator</a></li>
-                                                <li><a href="onepage-full-width-image.html">Home - full width image</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Carousel slider</li>
-                                                <li><a href="onepage-bootstrap-slider.html">Bootstrap slider - full screen</a></li>
-                                                <li><a href="onepage-slider-revolution1.html">Revolution slider - full screen</a></li>
-                                                <li><a href="onepage-slider-revolution2.html">Revolution slider - half screen</a></li>
-                                                <li><a href="onepage-slider-owl1.html">owl slider - full screen</a></li>
-                                                <li><a href="onepage-slider-owl2.html">owl slider - half screen</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse5" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Portfolio <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse5" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full">
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Grid</li>
-                                                <li><a href="portfolio-grid-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-grid-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-grid-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-grid-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Grid - Gutter</li>
-                                                <li><a href="portfolio-grid-gutter-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-grid-gutter-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-grid-gutter-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-grid-gutter-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Grid with Title</li>
-                                                <li><a href="portfolio-grid-with-title-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-grid-with-title-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-grid-with-title-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-grid-with-title-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Wide</li>
-                                                <li><a href="portfolio-wide-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-wide-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-wide-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-wide-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Wide - Gutter</li>
-                                                <li><a href="portfolio-wide-gutter-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-wide-gutter-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-wide-gutter-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-wide-gutter-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Wide with Title</li>
-                                                <li><a href="portfolio-wide-with-title-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-wide-with-title-gutter-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-wide-with-title-gutter-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-wide-with-title-gutter-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Masonry</li>
-                                                <li><a href="portfolio-masonry-2columns.html">2 Columns</a></li>
-                                                <li><a href="portfolio-masonry-3columns.html">3 Columns</a></li>
-                                                <li><a href="portfolio-masonry-4columns.html">4 Columns</a></li>
-                                                <li><a href="portfolio-masonry-5columns.html">5 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Other</li>
-                                                <li><a href="portfolio-parallax.html">Parallax</a></li>
-                                                <li><a href="portfolio-short-description.html">With Short Description</a></li>
-                                                <li><a href="portfolio-lightbox.html">Portfolio lightbox</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Single Project Page</li>
-                                                <li><a href="single-project-page1.html">Single Project Page 1</a></li>
-                                                <li><a href="single-project-page2.html">Single Project Page 2</a></li>
-                                                <li><a href="single-project-page3.html">Single Project Page 3</a></li>
-                                                <li><a href="single-project-page4.html">Single Project Page 4</a></li>
-                                                <li><a href="single-project-page5.html">Single Project Page 5</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Ajax - Project Page</li>
-                                                <li><a href="onepage-single-project-page1.html" class="simple-ajax-popup-align-top">Single Project Page 1</a></li>
-                                                <li><a href="onepage-single-project-page2.html" class="simple-ajax-popup-align-top">Single Project Page 2</a></li>
-                                                <li><a href="onepage-single-project-page3.html" class="simple-ajax-popup-align-top">Single Project Page 3</a></li>
-                                                <li><a href="onepage-single-project-page4.html" class="simple-ajax-popup-align-top">Single Project Page 4</a></li>
-                                                <li><a href="onepage-single-project-page5.html" class="simple-ajax-popup-align-top">Single Project Page 5</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse4" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse4" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full">
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Introduction</li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="about-us-option2.html">About Us - Option 2 <span class="menu-new">new</span></a></li>
-                                                <li><a href="team-members.html">Team Members</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="our-clients.html">Our Clients</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                                <li><a href="contact-us.html">Contact Us</a></li>
-                                                <li><a href="sitemap.html">Sitemap</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Utility</li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="faq.html">FAQ'S</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">Register</a></li>
-                                                <li><a href="404.html">Not Found (404)</a></li>
-                                                <li><a href="maintenance.html">Maintenance Page</a></li>
-                                                <li><a href="home-countdown-timer.html">Under Construction</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Page Layout</li>
-                                                <li><a href="page-full-width.html">Full Width</a></li>
-                                                <li><a href="page-full-width-wide.html">Full Width - Wide</a></li>
-                                                <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
-                                                <li><a href="page-right-sidebar.html">Right Sidebar</a></li>
-                                                <li><a href="page-both-sidebar.html">Both Sidebar</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                        <!-- sub menu column  -->
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Gallery</li>
-                                                <li><a href="gallery-1columns.html">1 Columns</a></li>
-                                                <li><a href="gallery-2columns.html">2 Columns</a></li>
-                                                <li><a href="gallery-3columns.html">3 Columns</a></li>
-                                                <li><a href="gallery-4columns.html">4 Columns</a></li>
-
-                                                <li><a href="gallery-6columns.html">6 Columns</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <!-- end sub menu column  -->
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse3" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Elements<i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse3" class="dropdown-menu mega-menu panel-collapse collapse mega-menu-full">
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Slider</li>
-                                                <li><a href="slider-bootstrap.html">Bootstrap</a></li>
-                                                <li><a href="slider-revolution.html">Revolution</a></li>
-                                                <li><a href="slider-owl.html">Owl</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Header</li>
-                                                <li><a href="header-light.html">Light Version</a></li>
-                                                <li><a href="header-light-without-cart-search.html">Light Version - Option 2 <span class="menu-new">new</span></a></li>
-                                                <li><a href="header-dark.html">Dark Version</a></li>
-                                                <li><a href="header-transparent-dark.html">Transparent Version - Dark</a></li>
-                                                <li><a href="header-transparent-light.html">Transparent Version - Light</a></li>
-                                                <li><a href="header-static-sticky.html">Static Sticky</a></li>
-                                                <li><a href="onepage-hamburger.html">Hamburger Menu <span class="menu-new">new</span></a></li>
-                                                <li><a href="onepage-hamburger-option2.html">Hamburger Menu - Option 2 <span class="menu-new">new</span></a></li>
-                                                <li><a href="onepage-agency-option2.html">Hamburger Menu - Option 3 <span class="menu-new">new</span></a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Page Titles</li>
-                                                <li><a href="page-title-white.html">Title white</a></li>
-                                                <li><a href="page-title-gray.html">Title gray</a></li>
-                                                <li><a href="page-title-dark-gray.html">Title dark gray</a></li>
-                                                <li><a href="page-title-black.html">Title black</a></li>
-                                                <li><a href="page-title-with-image.html">Title with image</a></li>
-                                                <li><a href="page-title-large.html">Title large</a></li>
-                                                <li><a href="page-title-small-white.html">Title small white</a></li>
-                                                <li><a href="page-title-small-gray.html">Title small gray</a></li>
-                                                <li><a href="page-title-small-dark-gary.html">Title small dark gray</a></li>
-                                                <li><a href="page-title-small-black.html">Title small black</a></li>
-                                                <li><a href="page-title-center-align.html">Title center align</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Other</li>
-                                                <li><a href="accordions.html"><i class="fa fa-plus-square"></i>Accordions</a></li>
-                                                <li><a href="progress-bar.html"><i class="fa fa-tasks"></i>Progress Bar</a></li>
-                                                <li><a href="buttons.html"><i class="fa fa-link"></i>Buttons</a></li>
-                                                <li><a href="features-box.html"><i class="fa fa-th-large"></i>Features Box</a></li>
-                                                <li><a href="form.html"><i class="fa fa-align-justify"></i>Form</a></li>
-                                                <li><a href="grid.html"><i class="fa fa-th"></i>Grid</a></li>
-                                                <li><a href="icons-et-line.html"><i class="fa fa-star-o"></i>Icons Et-line</a></li>
-                                                <li><a href="icons-font-awesome.html"><i class="fa fa-star"></i>Icons Font Awesome</a></li>
-                                                <li><a href="alert-massage.html"><i class="fa fa-comment"></i>Alert massage</a></li>
-                                                <li><a href="tabs.html"><i class="fa fa-outdent"></i>Tabs</a></li>
-                                                <li><a href="typography.html"><i class="fa fa-font"></i>Typography</a></li>
-                                                <li><a href="video-sound.html"><i class="fa fa-video-camera"></i>Video / Sound</a></li>
-                                                <li><a href="counter-and-skills.html"><i class="fa fa-circle-o-notch"></i>Counter and Skills</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Image Gallery</li>
-                                                <li><a href="single-image-lightbox.html">Single Image Lightbox</a></li>
-                                                <li><a href="lightbox-gallery.html">Lightbox Gallery</a></li>
-                                                <li><a href="zoom-gallery.html">Zoom gallery</a></li>
-                                                <li><a href="popup-with-form.html">Popup with Form</a></li>
-                                                <li><a href="modal-popup.html">Modal Popup</a></li>
-                                                <li><a href="open-youtube-video.html">Open YouTube Video</a></li>
-                                                <li><a href="open-vimeo-video.html">Open Vimeo Video</a></li>
-                                                <li><a href="open-google-map.html">Open Google Map</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel">
-                                    <a href="#collapse6" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Blog <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu -->
-                                    <ul id="collapse6" class="dropdown-menu panel-collapse collapse mega-menu-full" role="menu">
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Grid</li>
-                                                <li><a href="blog-grid-2columns.html">2 Columns</a></li>
-                                                <li><a href="blog-grid-3columns.html">3 Columns</a></li>
-                                                <li><a href="blog-grid-4columns.html">4 Columns</a></li>
-                                                <li><a href="blog-grid-full-width.html">Full width</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Masonry</li>
-                                                <li><a href="blog-masonry-2columns.html">2 Columns</a></li>
-                                                <li><a href="blog-masonry-3columns.html">3 Columns</a></li>
-                                                <li><a href="blog-masonry-4columns.html">4 Columns</a></li>
-                                                <li><a href="blog-masonry-full-width.html">Full width</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Default</li>
-                                                <li><a href="blog-right-sidebar.html">Right sidebar</a></li>
-                                                <li><a href="blog-left-sidebar.html">Left sidebar</a></li>
-                                                <li><a href="blog-full-width.html">Full width</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                        <li class="mega-menu-column col-sm-3">
-                                            <!-- sub menu item  -->
-                                            <ul>
-                                                <li class="dropdown-header">Single</li>
-                                                <li><a href="blog-single-right-sidebar.html">Right sidebar</a></li>
-                                                <li><a href="blog-single-left-sidebar.html">Left sidebar</a></li>
-                                                <li><a href="blog-single-full-width.html">Full width</a></li>
-                                                <li><a href="blog-single-full-width-with-image-slider.html">Full width with image slider</a></li>
-                                                <li><a href="blog-single-full-width-with-lightbox-gallery.html">Full width with lightbox gallery</a></li>
-                                            </ul>
-                                            <!-- end sub menu item  -->
-                                        </li>
-                                    </ul>
-                                    <!-- end sub menu -->
-                                </li>
-                                <!-- end menu item -->
-                                <!-- menu item -->
-                                <li class="dropdown panel simple-dropdown">
-                                    <a href="#collapse7" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Shop <i class="fa fa-angle-down"></i></a>
-                                    <!-- sub menu single -->
-                                    <!-- sub menu item  -->
-                                    <ul id="collapse7" class="dropdown-menu panel-collapse collapse" role="menu">
-                                        <li class="dropdown-header">For Shopping Cart</li>
-                                        <li><a href="home-shop.html">Shop homepage</a></li>
-                                        <li><a href="shop-with-sidebar.html">Shop with sidebar - grid</a></li><li><a href="shop-with-sidebar-list.html">Shop with sidebar - list</a></li>
-                                        <li><a href="shop-full-width.html">Shop full width</a></li>
-                                        <li><a href="shop-single-product.html">Single product</a></li>
-                                        <li><a href="shop-cart.html">Cart</a></li>
-                                        <li><a href="shop-checkout.html">Checkout</a></li>
-                                    </ul>
-                                    <!-- end sub menu item  -->
-                                    <!-- end sub menu single -->
-                                </li>
-                                <!-- end menu item -->
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end main menu -->
+                    {{#block "menu"}}
+                    {{> menu}}
+                    {{/block}}
                 </div>
             </div>
         </nav>
@@ -611,15 +121,15 @@
         <!-- head section -->
         <section class="page-title parallax3 parallax-fix page-title-large page-title-shop">
             <div class="opacity-light bg-dark-gray"></div>
-            <img class="parallax-background-img" src="{{ref-domain}}images/parallax-img47.jpg" alt="" />
+            <img class="parallax-background-img" src="{{site.ref-domain}}images/parallax-img47.jpg" alt="" />
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 wow fadeIn">
                         <!-- page title tagline -->
-                        <span class="text-uppercase white-text">Since 1982 brand</span>
+                        <span class="text-uppercase white-text">{{slideshow.title}}</span>
                         <!-- end title tagline -->
                         <!-- page title -->
-                        <h1 class="white-text">Collection</h1>
+                        <h1 class="white-text">{{slideshow.description}}</h1>
                         <!-- end page title -->
                     </div>
                     <div class="col-md-12 col-sm-12 breadcrumb text-uppercase margin-three no-margin-bottom wow fadeIn">
@@ -645,9 +155,9 @@
                             <div class="col-md-8 col-sm-8 grid-nav">
                                 <a href="shop-with-sidebar-list.html"><i class="fa fa-bars"></i></a>
                                 <a href="#"><i class="fa fa-th"></i></a>
-                                <p class="text-uppercase letter-spacing-1">Showing 1–12 of 22 results</p>
+                                <p class="text-uppercase letter-spacing-1">Hiển thị {{products.length}} sản phẩm</p>
                             </div>
-                            <div class="col-md-3 col-sm-3 pull-right">
+                            <!-- <div class="col-md-3 col-sm-3 pull-right">
                                 <div class="select-style input-round med-input shop-shorting-full no-border">
                                     <select>
                                         <option value="">Select sort by</option>
@@ -657,26 +167,27 @@
                                         <option value="">Price: high to low</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="product-listing margin-three">
                           {{#each products}}
                             <!-- shop item -->
                             <div class="col-md-4 col-sm-6">
                                 <div class="home-product text-center position-relative overflow-hidden margin-ten no-margin-top">
-                                    <a href="shop-single-product.html"><img src="{{../ref-domain}}{{this.image}}" alt=""/></a>
-                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">Gianvito Rossi</a></span>
+                                    <a href="shop-single-product.html"><img src="{{../site.ref-domain}}{{this.image}}" alt=""/></a>
+                                    <span class="product-name text-uppercase"><a href="shop-single-product.html">{{this.name}}</a></span>
                                     {{#if this.old_price}}
                                       <span class="price black-text"><del>${{this.old_price}}</del>${{this.price}}</span>
                                     {{else}}
                                       <span class="price black-text">${{this.price}}</span>
                                     {{/if}}
-                                    <span class="onsale onsale-style-2">Sale</span>
+
+                                    <!-- <span class="onsale onsale-style-2">Sale</span> -->
                                     <div class="quick-buy">
                                         <div class="product-share">
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
-                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a>
-                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                                            <!-- <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Add to Compare"><i class="fa fa-refresh"></i></a> -->
+                                            <a href="shop-cart.html" class="highlight-button-dark btn btn-small no-margin-right quick-buy-btn" title="Mua Nhanh"><i class="fa fa-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -686,15 +197,15 @@
 
                         </div>
                         <!-- pagination -->
-                        <div class="pagination margin-ten no-margin-bottom">
-                            <a href="#"><img src="{{ref-domain}}images/arrow-pre-small.png" alt=""/></a>
+                        <!-- <div class="pagination margin-ten no-margin-bottom">
+                            <a href="#"><img src="{{site.ref-domain}}images/arrow-pre-small.png" alt=""/></a>
                             <a href="#">1</a>
                             <a href="#">2</a>
                             <a href="#" class="active">3</a>
                             <a href="#">4</a>
                             <a href="#">5</a>
-                            <a href="#"><img src="{{ref-domain}}images/arrow-next-small.png" alt=""/></a>
-                        </div>
+                            <a href="#"><img src="{{site.ref-domain}}images/arrow-next-small.png" alt=""/></a>
+                        </div> -->
                         <!-- end pagination -->
                     </div>
                 </div>
@@ -708,13 +219,13 @@
                 <div class="container">
                     <div class="row margin-four">
                         <!-- phone -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">123-456-7890</h6></div>
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">{{contact.phone}}</h6></div>
                         <!-- end phone -->
                         <!-- address -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">Victoria, United States</h6></div>
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">{{contact.address}}</h6></div>
                         <!-- end address -->
                         <!-- email -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:no-reply@domain.com" class="black-text">no-reply@domain.com</a></h6></div>
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:{{contact.email}}" class="black-text">{{contact.email}}</a></h6></div>
                         <!-- end email -->
                     </div>
                 </div>
@@ -723,13 +234,13 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 footer-link1 xs-display-none">
                         <!-- headline -->
-                        <h5>About Us</h5>
+                        <h5>{{aboutus.header}}</h5>
                         <!-- end headline -->
                         <!-- text -->
-                        <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p class="footer-text">{{aboutus.description}}</p>
                         <!-- end text -->
                     </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3">
+                    <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3" style="display:none">
                         <!-- headline -->
                         <h5>Company</h5>
                         <!-- end headline -->
@@ -742,7 +253,7 @@
                         </ul>
                         <!-- end link -->
                     </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link3">
+                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link3" style="display:none">
                         <!-- headline -->
                         <h5>Services</h5>
                         <!-- end headline -->
@@ -755,7 +266,7 @@
                         </ul>
                         <!-- end link -->
                     </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link4">
+                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link4" style="display:none">
                         <!-- headline -->
                         <h5>Introduction</h5>
                         <!-- end headline -->
@@ -799,12 +310,15 @@
                     <div class="row margin-three">
                         <!-- copyright -->
                         <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2015 H-Code is proudly powered by ThemeZaa.
+                            &copy; powered by <a href="http://vinaas.com/vn/index.html">VinaAS</a>.
                         </div>
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="index.html"><img src="{{ref-domain}}images/logo-light-gray.png" alt=""/></a>
+                            <a href="index.html">
+                              <!-- <img src="{{site.ref-domain}}images/logo-light-gray.png" alt=""/> -->
+                              {{logo.name}}
+                            </a>
                         </div>
                         <!-- end logo -->
                     </div>
@@ -817,47 +331,47 @@
         <!-- end footer -->
 
         <!-- javascript libraries / javascript files set #1 -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/modernizr.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/bootstrap.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/bootstrap-hover-dropdown.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/skrollr.min.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/modernizr.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/bootstrap.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/bootstrap-hover-dropdown.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/skrollr.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/smooth-scroll.js"></script>
          <!-- jquery appear -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.appear.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.appear.js"></script>
         <!-- animation -->
-        <script type="text/javascript" src="{{ref-domain}}js/wow.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/wow.min.js"></script>
         <!-- page scroll -->
-        <script type="text/javascript" src="{{ref-domain}}js/page-scroll.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/page-scroll.js"></script>
         <!-- easy piechart-->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.easypiechart.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.easypiechart.js"></script>
         <!-- parallax -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.parallax-1.1.3.js"></script>
         <!--portfolio with shorting tab -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.isotope.min.js"></script>
         <!-- owl slider  -->
-        <script type="text/javascript" src="{{ref-domain}}js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/owl.carousel.min.js"></script>
         <!-- magnific popup  -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/popup-gallery.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/popup-gallery.js"></script>
         <!-- text effect  -->
-        <script type="text/javascript" src="{{ref-domain}}js/text-effect.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/text-effect.js"></script>
         <!-- revolution slider  -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.tools.min.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.revolution.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.tools.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.revolution.js"></script>
         <!-- counter  -->
-        <script type="text/javascript" src="{{ref-domain}}js/counter.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/counter.js"></script>
          <!-- countTo -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.countTo.js"></script>
         <!-- fit videos  -->
-        <script type="text/javascript" src="{{ref-domain}}js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/jquery.fitvids.js"></script>
         <!-- imagesloaded  -->
-        <script type="text/javascript" src="{{ref-domain}}js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/imagesloaded.pkgd.min.js"></script>
         <!-- hamburger menu-->
-        <script type="text/javascript" src="{{ref-domain}}js/classie.js"></script>
-        <script type="text/javascript" src="{{ref-domain}}js/hamburger-menu.js"></script>
+        <script type="text/javascript" src="{{site.ref-domain}}js/classie.js"></script>
+        <!-- <script type="text/javascript" src="{{site.ref-domain}}js/hamburger-menu.js"></script> -->
         <!-- setting -->
-        <script type="text/javascript" src="{{ref-domain}}js/main.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
     </body>
 </html>
