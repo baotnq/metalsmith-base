@@ -9,11 +9,11 @@ module.exports = {
     "metadata": {
       "site": {
         "title": "Baotnq điều chỉnh",
-        "description": "It's about saying 'Xin Chào' to the World.",
+        "description": "Good morning",
         "generator": "EasyWeb Metalsmith",
         "ref-domain": "http://handy.themes.zone",
-        "author": 'Parimal Satyal',
-        "keywords": 'Neustadt, parimalsatyal, Parimal Satyal',
+        "author": "arimal Satyal",
+        "keywords": "Neustadt, parimalsatyal, Parimal Satyal"
       }
     },
     "config": {
@@ -46,7 +46,20 @@ module.exports = {
         "blog": {
           "sortBy": "date",
           "reverse": true
-        }
+        },
+        "items": {
+            "pattern": "items/**/*.md",
+            "sortBy": "date",
+            "reverse": true
+        },
+        "all": {
+            "pattern": "*/**/*.md",
+            "sortBy": "date",
+            "reverse": true,
+            "metadata": {
+                "name": "Everything"
+            }
+          }
       },
       "metalsmith-pagination": {
         "collections.blog": {
