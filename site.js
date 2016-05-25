@@ -8,7 +8,12 @@ module.exports = {
   "metalsmith": {
     "metadata": {
       "site": {
-        "url": "https://github.com/evocode/metalsmith-base"
+        "title": "Baotnq điều chỉnh",
+        "description": "It's about saying 'Xin Chào' to the World.",
+        "generator": "EasyWeb Metalsmith",
+        "ref-domain": "http://handy.themes.zone",
+        "author": 'Parimal Satyal',
+        "keywords": 'Neustadt, parimalsatyal, Parimal Satyal',
       }
     },
     "config": {
