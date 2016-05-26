@@ -48,7 +48,7 @@ module.exports = {
           "reverse": true
         },
         "items": {
-            "pattern": "items/**/*.md",
+            "pattern": "items/*.md",
             "sortBy": "date",
             "reverse": true
         },
